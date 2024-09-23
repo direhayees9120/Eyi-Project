@@ -7,35 +7,37 @@
   <link rel="shortcut icon" href="./images/favicon.ico" />
   <title>Eyi-project</title>
   <script src="https://kit.fontawesome.com/d58333125a.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
   <!-- header part -->
 
   <header>
-    <div>
-      <img src="./images/amike.png" alt="amike" id="Brand-Logo" />
-    </div>
-
     <nav>
-      <ul>
-        <li><a href="#Home">Home</a></li>
-        <li><a href="#About">About</a></li>
-        <li><a href="#Contact">Contact</a></li>
-        <li><a href="#Blog">Blog</a></li>
-        <li><a href="#Skills">Skills</a></li>
-        <li><a href="#Services">Services</a></li>
-        <li> <a href="#portfolio">portfolio</a></li>
-      </ul>
+      <div id=>
+        <img class="logoamike" src="./images/amike.png" alt="amike" id="Brand-Logo" />
+      </div>
+      <div>
+        <ul>
+          <li><a href="#Home">Home</a></li>
+          <li><a href="#About">About</a></li>
+          <li><a href="#Contact">Contact</a></li>
+          <li><a href="#Blog">Blog</a></li>
+          <li><a href="#Skills">Skills</a></li>
+          <li><a href="#Services">Services</a></li>
+          <li> <a href="#portfolio">portfolio</a></li>
+        </ul>
+      </div>
     </nav>
   </header>
 
   <!-- main part -->
   <main>
-    <section id="Home">
+    <section class="Hero-section">
       <div id="#leftbox">
         <!-- social icon -->
-        <div>
+        <div class="icons">
           <div class="socialicon">
             <i class="fa-brands fa-facebook"></i>
           </div>
@@ -51,150 +53,135 @@
           <div class="socialicon">
             <i class="fa-brands fa-youtube"></i>
           </div>
-          <i><i class="fa-brands fa-twitter"></i></i>
+
 
         </div>
 
+        <div class="doe-text">
+          <h1>I am Jonathan Doe</h1>
+          <p>i'm Jonathan, professional web developer with long time experience in this field</p>
+        </div>
+
+        <div class="btn">
+          <button id="btn1"> My Portfolio </button>
+          <button id="btn2"><i class="fa-solid fa-play"></i></button>
+        </div>
       </div>
       <!-- text content -->
-      <h1>I am Jonathan Doe</h1>
-      <p>i'm Jonathan, professional web developer with long time experience in this field</p>
 
 
       <!-- cta button -->
-      <div>
-        <button> portfolio </button>
-        <button>
-          <i class="fa-solid fa-play"></i>
-        </button>
-      </div>
+
 
 
       <div id="rightBox">
-        <img src="./images/doe.png" height="450px" alt="Doepics" />
+        <img src="./images/doe.png" height="729px" width="490px" alt="Doepics" />
       </div>
     </section>
 
     <section id="Services">
-      <div id="topBox">
-        <p>Services</p>
-        <h2>My Services</h2>
-        <P>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum eveniet animi natus illo, minus et magni odio
-          tempore nobis ullam aperiam corporis temporibus cumque sapiente asperiores accusantium autem porro! Suscipit!
+      <div class="topBox b2">
+        <p id="smalltittle">Services</p>
+        <h1>My Services</h1>
+        <P class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard
+          dummy text.
         </P>
-
+        <hr class="divider">
       </div>
-      <hr>
-
-      <div id="bottomBox">
-        <div id="servicecard">
+      <div class="cards">
+        <div class="servicecard ">
           <i class="fa-brands fa-github"></i>
-          <h2>web Development</h2>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque, dolores.</p>
+          <h3>web Development</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quia! Lorem Ipsum is</p>
         </div>
 
-        <div id="servicecard">
+        <div class="servicecard ">
           <i class="fa-brands fa-codepen"></i>
           <h3>web design</h3>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae nobis quidem, soluta temporibus at
-            eius! Exercitationem cumque nobis tempora necessitatibus, praesentium maiores adipisci quae obcaecati earum
-            dolorem error? Aperiam!</p>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quia! Lorem Ipsum is</p>
         </div>
 
-        <div id="servicecard">
+        <div class="servicecard">
           <i class="fa-brands fa-apple"></i>
-          <h4>app developing</h4>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae nobis quidem, soluta temporibus at
-            eius! Exercitationem cumque nobis tempora necessitatibus, praesentium maiores adipisci quae obcaecati earum
-            dolorem error? Aperiam!</p>
-        </div>
-
-        <div id="servicecard">
-          <i class="fa-solid fa-video"></i>
-          <h5>video editing</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis beatae nobis quidem, soluta temporibus at
-            eius! Exercitationem cumque nobis tempora necessitatibus, praesentium maiores adipisci quae obcaecati earum
-            dolorem error? Aperiam!</p>
-        </div>
-
-        <div id="servicecard">
-          <i class="fa-brands fa-github"></i>
-          <h5>seo expart</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, similique. Dolorum consequatur, deleniti
-            cumque iure itaque aut, tenetur dignissimos distinctio eum delectus corrupti iusto rem quo! Aliquid magnam
-            sed esse?!</p>
-        </div>
-        <div id="servicecard">
-          <i class="fa-solid fa-camera-retro"></i>
-          <h5>Photography</h5>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, similique. Dolorum consequatur, deleniti
-            cumque iure itaque aut, tenetur dignissimos distinctio eum delectus corrupti iusto rem quo! Aliquid magnam
-            sed esse?!</p>
+          <h3>app developing</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quia! Lorem Ipsum is</p>
         </div>
       </div>
 
+      <div class="cards">
+        <div class="servicecard">
+          <i class="fa-solid fa-video"></i>
+          <h3>video editing</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quia! Lorem Ipsum is</p>
+        </div>
+
+        <div class="servicecard">
+          <i class="fa-brands fa-github"></i>
+          <h3>seo expart</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quia! Lorem Ipsum is</p>
+        </div>
+
+        <div class="servicecard">
+          <i class="fa-solid fa-camera-retro"></i>
+          <h3>Photography</h3>
+          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Deleniti, quia! Lorem Ipsum is</p>
+        </div>
+      </div>
     </section>
 
     <section id="about">
-      <div id="topBox">
-        <h2>About me</h2>
-        <P>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard dummy text.
+      <div>
+        <h1 id="aboutme">About me</h1>
+        <P class="para">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum standard
+          dummy text..
         </P>
-        <hr>
+        <hr class="divider">
 
       </div>
 
-      <div>
+      <div class="aboutdcont">
 
-        <div id="leftBox">
-          <img src="./images/john doe.png" alt="john wearing green">
-        </div>
-        <h3>Hi There</h3>
-        <p>In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien faucibus fermentum ut vel diam.
-          Nullam tempus, nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis
 
-          nunc id efficitur sagittis, urna est ultricies eros, ac porta sem turpis porta sem turpis quis leo. Nulla in
-          feugiat elit</p>
+        <img src="./images/john doe.png" width="400px" height="600px" alt="john wearing green">
+
         <div>
-          <table>
-            <tr>
-              <th>Name</th>
-              <th>phone</th>
-            </tr>
+          <div id="contpara">
+            <h3 id="h3cap">Hi There</h3>
+            <p class="para2">In id nulla magna. Nullam posuere fermentum mattis. Nunc id dui at sapien urna est
+              ultricies eros, ac porta sem turpis porta sem nunc id
+              efficitur sagittis, urna est ultricies eros, ac porta sem turpis porta sem turpis quis leo. Nulla in
+              feugiat elit.</p>
 
-            <tr>
-              <td>John Doe</td>
-              <td> +1 023-454-345</td>
+            <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio reprehenderit in perspiciatis
+              enim ipsam
+              aut minus dolore dolor ullam nulla.</p>
 
+            <div class="cont">
+              <div>
+                <p id="cored">Name:
+                <p id="pn">Jonathan Doe</p>
+                </p>
 
-            </tr>
-          </table>
+                <p id="cored"> Phone:
+                <p>+1 023 454 345</p>
+                </p>
+              </div>
 
+              <div>
+                <p id="cored">LinkedIn:
+                <p id="pn">Jonathan_123</p>
+                </p>
+
+                <p id="cored">Email:
+                <p>example@domain.com</p>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
 
-      </div>
-
-
-      <div>
-        <table>
-          <tr>
-            <th>Email</th>
-            <th>Linkedin</th>
-
-          </tr>
-          <br>
-          <tr>
-            <td>JohnDoe@gmail.me</td>
-            <td>johndoewe23</td>
-
-
-          </tr>
-        </table>
 
       </div>
-
-
-
     </section>
 
 
@@ -438,9 +425,9 @@
 
           </div>
           <div>
-            
-         
-            
+
+
+
           </div>
         </div>
 
@@ -616,7 +603,9 @@
   <!-- footer part -->
   <footer>
     <div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor inci- didunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exe- rcitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat.</p>
       <br>
       <div>
 
